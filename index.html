@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+     <meta charset="utf-8">
+     <title></title>
+     <!-- script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script-->
+     <script src="https://unpkg.com/vue"></script>
+     <script src="https://unpkg.com/http-vue-loader"></script>
+</head>
+
+<body>
+    <div id="app">
+        <hello></hello>
+        <hello2></hello>
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            components: {
+              hello: httpVueLoader('components/component.vue'),
+              hello2: httpVueLoader('components/treeComponent/test2.vue')
+            }
+        })
+    </script>
+</body>
+
 </html>
