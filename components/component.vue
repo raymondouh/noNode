@@ -2,20 +2,20 @@
     <div>
         <span>
             {{text}}
-        </sapn>
-        <hello3></hello3>
+        </span>
+        <cmp3></cmp3>
     </div>
 </template>
 
 <script>
     module.exports = {
-        name: "hello",
+        name: "siblingComponent",
         components: {
-          hello3: httpVueLoader('components/treeComponent/test2.vue')
+          cmp3: httpVueLoader('components/treeComponent/treeComponent.vue')
       },
         data() {
             return {
-                text: "hello world"
+                text: "sibling Component"
             }
         }
     }

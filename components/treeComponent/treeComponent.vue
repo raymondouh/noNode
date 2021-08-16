@@ -8,10 +8,10 @@
 
 <script>
     module.exports = {
-        name: "hello2",
+        name: "treeComp",
         data() {
             return {
-                text: "hello world"
+                text: "tree component"
             }
         }
     }

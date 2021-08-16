@@ -11,15 +11,15 @@
 
 <body>
     <div id="app">
-        <hello></hello>
-        <hello2></hello>
+        <cmp1></cmp1>
+        <cmp2></cmp2>
     </div>
     <script>
         var app = new Vue({
             el: "#app",
             components: {
-              hello: httpVueLoader('components/component.vue'),
-              hello2: httpVueLoader('components/treeComponent/test2.vue')
+              cmp1: httpVueLoader('components/component.vue'),
+              cmp2: httpVueLoader('components/treeComponent/treeComponent.vue')
             }
         })
     </script>
